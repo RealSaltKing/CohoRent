@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rent Split Tool</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-section">
+      <h1>Coho Room Rent Breakdown</h1>
+      <div class="slider-container">
+        <label for="masterPremium"
+          >Master Bedroom Differential (%):
+          <span id="premiumValue">15</span>%</label
+        >
+        <input
+          type="range"
+          id="masterPremium"
+          min="5"
+          max="20"
+          step="1"
+          value="15"
+          onchange="updatePrices()"
+        />
+      </div>
+      <div class="room-display" id="roomDisplay">
+        <!-- Rooms will be shown here -->
+      </div>
+    </div>
+
+    <div class="bottom-section">
+      <h2>Cuck Room Reverse Bid</h2>
+      <div class="bid-amount">$<span id="smallRoomDisplay">750</span></div>
+      <div class="bid-buttons">
+        <button onclick="decreaseBid()">Lower Bid</button>
+        <button onclick="increaseBid()">Raise Bid</button>
+      </div>
+      <div class="custom-bid">
+        <input
+          type="number"
+          id="customBidInput"
+          placeholder="Enter custom bid"
+        />
+        <button onclick="setCustomBid()">Set Bid</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

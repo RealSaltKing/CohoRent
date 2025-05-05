@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+  }
+  
+  h1, h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .top-section, .bottom-section {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px 30px;
+    margin: 20px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slider-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+  }
+  
+  .room-display {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .room-box {
+    background-color: #eaf0f6;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin: 10px;
+    flex: 1 1 150px;
+    text-align: center;
+  }
+  
+  .room-box h3 {
+    margin: 5px 0;
+    color: #444;
+  }
+  
+  .bid-amount {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #444;
+  }
+  
+  .bid-buttons {
+    margin: 10px 0;
+  }
+  
+  button {
+    padding: 10px 16px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #3b7dc1;
+  }
+  
+  .custom-bid {
+    margin-top: 10px;
+  }
+  
+  .custom-bid input {
+    padding: 8px;
+    font-size: 16px;
+    width: 160px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .custom-bid button {
+    margin-left: 10px;
+  }
+  
+  .bottom-section {
+    text-align: center;
+  }
+  
+  .bid-buttons, .custom-bid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
