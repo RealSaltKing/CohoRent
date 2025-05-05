@@ -1,6 +1,6 @@
 const totalRent = 3850;
 let smallRoomPrice = 750;
-const smallRoomMin = 0;
+const smallRoomMin = 500;
 const smallRoomMax = 750;
 
 function updatePrices() {
